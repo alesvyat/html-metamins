@@ -1,0 +1,70 @@
+/*
+Color scheme: reforma-final-2 + some modifications
+https://coolors.co/000000-003d45-dd7d4d-edd4aa-ffffff
+*/
+
+:root {
+	--color1: #111111;
+	--color2: #003D45;
+	--color3: #DD7D4D;
+	--color4: #EDD4AA;
+	--color5: #DDDDDD;
+}
+
+body {
+	background-color: var(--color1);
+	color: var(--color3);
+	font-family: helvetica;
+}
+body > header {
+	background-color: var(--color2);
+	color: var(--color5);
+
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+	text-align: center;
+}
+body > header > div > a {
+	color: var(--color5)
+}
+body > section > header {
+	/*font-family: helvetica header;*/
+}
+section {
+	background-color: var(--color2);
+	
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+	border-radius: 12px;
+}
+section > header {
+	/*color : var(--color4);*/
+}
+.section-header {
+	font-family: helvetica header;
+	color: var(--color4);
+}
+footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	margin-top: 37.5px;
+	background-color: var(--color2);
+	text-align: center;
+}
+footer > div > a {
+	color: var(--color3)
+}
