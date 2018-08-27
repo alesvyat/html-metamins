@@ -4,20 +4,22 @@ https://coolors.co/000000-003d45-dd7d4d-edd4aa-ffffff
 */
 
 :root {
-	--color1: #111111;
-	--color2: #003D45;
-	--color3: #DD7D4D;
+	--color1: #171717; --color1-shadow: rgba(232,232,232,0.1); --color1-shadow-hover: rgba(232,232,232,0.3);
+	--color2: #003D45; --color2a: #00383F;
+	--color3: #DD7D4D; --color3a: #C97246;
 	--color4: #EDD4AA;
-	--color5: #DDDDDD;
+	--color5: #E8E8E8;
 }
 
-body {
+.body {
 	background-color: var(--color1);
 	color: var(--color3);
 	font-family: helvetica;
+	padding-bottom: 50px;
 }
-body > header {
-	background-color: var(--color2);
+
+.header {
+	background-color: var(--color2a);
 	color: var(--color5);
 
 	padding-left: 12px;
@@ -29,13 +31,79 @@ body > header {
 
 	text-align: center;
 }
-body > header > div > a {
-	color: var(--color5)
+
+.flex-cards {
+	display: inline-flex;
+	flex-flow: row wrap;
+	
+	flex-basis: 100%;
+
 }
-body > section > header {
-	/*font-family: helvetica header;*/
+
+.card {
+	border-radius: 12px;
+	box-shadow: 0 4px 8px 0 var(--color1-shadow);
+	max-width: 300px;
+	margin: 5px;
+	text-align: center;
+	font-family: arial;
+	background-color: var(--color2);
+	padding-bottom: 45px;
+	position: relative;
+	align-self: flex-start;
 }
-section {
+
+.price {
+	color: var(--color4);
+	font-size: 22px;
+}
+
+.card__button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	
+	text-align: center;
+	cursor: pointer;
+	width: 50%;
+	font-size: 18px;
+
+	position: absolute;
+	bottom: 0;
+	
+}
+
+.card__compare-button {
+	color: var(--color3);;
+	background-color: var(--color5);
+
+	left: 0;
+	border-bottom-left-radius: 12px;
+}
+
+.card__buy-button {
+	color: var(--color5);;
+	background-color: var(--color3);
+
+	right: 0;
+	border-bottom-right-radius: 12px;
+}
+
+.card:hover {
+	background-color: var(--color2a);
+	box-shadow: 0 8px 16px 0 var(--color1-shadow-hover);
+}
+
+.card__button:hover {
+	opacity: 0.9;
+}
+
+img {
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.section {
 	background-color: var(--color2);
 	
 	padding-left: 12px;
@@ -48,23 +116,27 @@ section {
 
 	border-radius: 12px;
 }
-section > header {
-	/*color : var(--color4);*/
-}
+
 .section-header {
 	font-family: helvetica header;
 	color: var(--color4);
 }
-footer {
+
+.footer {
 	position: fixed;
 	right: 0;
 	bottom: 0;
 	left: 0;
 
 	margin-top: 37.5px;
-	background-color: var(--color2);
+	background-color: var(--color2a);
 	text-align: center;
 }
-footer > div > a {
-	color: var(--color3)
+
+.link {
+	color: inherit;
+}
+
+.link-current {
+	text-decoration: none;
 }

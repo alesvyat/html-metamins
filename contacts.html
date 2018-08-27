@@ -6,61 +6,60 @@
 		<link rel="stylesheet" type="text/css" href="theme.css">
 		<script src="/script.js"></script>
 	</head>
-	<body>
-		<header>
-			<h1>Sasha's</h1>
-			<p>Welcome to Sasha's - the best (no) auto parts shop</p>
-			<div>
-				<a href="./main.html">Main</a>
-				<a href="./prices.html">Prices</a>
-				Contacts
+	<body class="body">
+		<header class="header">
+			<h1 class="header-h1">Sasha's</h1>
+			<p class="header-p">Welcome to Sasha's - the best (no) auto parts shop</p>
+			<div class="navigation">
+				<a href="./main.html" class="navigation__item link">Main</a>
+				<a href="./prices.html" class="navigation__item link">Prices</a>
+				<a href="./contacts.html" class="navigation__item link link-current">Contacts</a>
 			</div>
 		</header>
-		<section>
-			<header>
-				<h2 class="section-header">Contacts</h2>
+		<section class="section">
+			<header class="section-header">
+				<h2 class="section-header__h2">Contacts</h2>
 				<!--cellpadding and allign are to be specified via CSS-->
 			</header>
-			<main>
-				<table>
-					<tr>
-						<th>Person</th>
-						<th>Phone</th>
-						<th>E-mail</th>
-						<th>Address</th>
-					</tr>
-					<tr>
-						<td>First Sasha</td>
-						<td>666-1</td>
-						<td>first@sasha.com</td>
-						<td>666000, 1 Sasha st, Sasha city</td>
-					</tr>
-					<tr>
-						<td>Second Sasha</td>
-						<td>666-2</td>
-						<td>second@sasha.com</td>
-						<td>666000, 2 Sasha st, Sasha city</td>
-					</tr>
-					<tr>
-						<td>Third Sasha</td>
-						<td>666-3</td>
-						<td>third@sasha.com</td>
-						<td>666000, 3 Sasha st, Sasha city</td>
-					</tr>
-
-			  </table>
-			</main>
+			<table class="table">
+				<tr>
+					<th>Person</th>
+					<th>Phone</th>
+					<th>E-mail</th>
+					<th>Address</th>
+				</tr>
+				<tr>
+					<td>First Sasha</td>
+					<td>666-1</td>
+					<td>first@sasha.com</td>
+					<td>666000, 1 Sasha st, Sasha city</td>
+				</tr>
+				<tr>
+					<td>Second Sasha</td>
+					<td>666-2</td>
+					<td>second@sasha.com</td>
+					<td>666000, 2 Sasha st, Sasha city</td>
+				</tr>
+				<tr>
+					<td>Third Sasha</td>
+					<td>666-3</td>
+					<td>third@sasha.com</td>
+					<td>666000, 3 Sasha st, Sasha city</td>
+				</tr>
+			</table>
 		</section>
 		<br>
 		<br>
 		<footer class="footer">
 			<br>
-			<div>
-				<a href="./main.html">Main</a>
-				<a href="./prices.html">Prices</a>
-				Contacts
+			<div class="navigation">
+				<a href="./main.html" class="navigation__item link">Main</a>
+				<a href="./prices.html" class="navigation__item link">Prices</a>
+				<a href="./contacts.html" class="navigation__item link link-current">Contacts</a>
 			</div>
-			<div>(C) <a href="https://github.com/alesvyat/html-metamins" target="_blank">Sasha</a>, 2018</div>
+			<div class="copyright">
+				(C) <a class="copyright__link link" href="https://github.com/alesvyat/html-metamins" target="_blank">Sasha</a>, 2018
+			</div>
 		</footer>
 	</body>
 </html>

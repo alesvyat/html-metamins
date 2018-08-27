@@ -4,241 +4,275 @@
 		<title>Sasha's</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="theme.css">
-		<script src="/script.js"></script>
 	</head>
-	<body>
-		<header>
-			<h1>Sasha's</h1>
-			<p>Welcome to Sasha's - the best (no) auto parts shop</p>
-			<div>
-				<a href="./main.html">Main</a>
-				Prices
-				<a href="./contacts.html">Contacts</a>
+	<body class="body">
+		<header class="header">
+			<h1 class="header-h1">Sasha's</h1>
+			<p class="header-p">Welcome to Sasha's - the best (no) auto parts shop</p>
+			<div class="navigation">
+				<a href="./main.html" class="navigation__item link">Main</a>
+				<a href="./prices.html" class="navigation__item link link-current">Prices</a>
+				<a href="./contacts.html" class="navigation__item link">Contacts</a>
 			</div>
 		</header>
-		<section>
-			<header>
-				<h2 class="section-header">Prices for Zhiguli</h2>
-			</header>
-			<main>
-				<!--border and align are to be specified via CSS-->
-				<table>
-					<tr>
-						<th>Name</th>
-						<th>Unit</th>
-						<th>Price, RUB</th>
-						<th>Awaiting, days</th>
-					</tr>
-					<tr>
-						<td>Wheel</td>
-						<td>1 p.</td>
-						<td>5000</td>
-						<td>4</td>
-					</tr>
-					<tr>
-						<td>Circle</td>
-						<td>1 p.</td>
-						<td>10000</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Headlight</td>
-						<td>1 p.</td>
-						<td>2500</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Blinker</td>
-						<td>1 p.</td>
-						<td>1000</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Foot break</td>
-						<td>1 p.</td>
-						<td>10000</td>
-						<td>5</td>
-					</tr>
-					<tr>
-						<td>Hand break</td>
-						<td>1 p.</td>
-						<td>10000</td>
-						<td>7</td>
-					</tr>
-					<tr>
-						<td>Wheel</td>
-						<td>1 p.</td>
-						<td>5000</td>
-						<td>4</td>
-					</tr>
-					<tr>
-						<td>Wheel</td>
-						<td>1 p.</td>
-						<td>5000</td>
-						<td>4</td>
-					</tr>
-					<tr>
-						<td>Wheel</td>
-						<td>1 p.</td>
-						<td>5000</td>
-						<td>4</td>
-					</tr>
-					
-			  </table>
-			</main>
+		<section class="flex-cards">
+			<div class="card">
+				<img src="images\zhiguli-wheel.jpg" alt="zhiguli-wheel.jpg" style="width:100%">
+				<h1>Wheel for Zhiguli</h1>
+				<p class="price">10,000 ₽</p>
+				<p>The best wheel for the best car in the world. Perfect decision for true patriot!</p>
+				<button class="card__compare-button card__button">Compare</button>
+				<button class="card__buy-button card__button">Buy</button>
+			</div>
+			<div class="card">
+				<img src="images\zhiguli-wheel.jpg" alt="zhiguli-wheel.jpg" style="width:100%">
+				<h1>Circle for Zhiguli</h1>
+				<p class="price">10,000 ₽</p>
+				<p>The best circle for the best car in the world. Perfect decision for true patriot! Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+				<button class="card__compare-button card__button">Compare</button>
+				<button class="card__buy-button card__button">Buy</button>
+			</div>
+			<div class="card">
+				<img src="images\zhiguli-wheel.jpg" alt="zhiguli-wheel.jpg" style="width:100%">
+				<h1>Headlight for Zhiguli</h1>
+				<p class="price">2,500 ₽</p>
+				<p>The best headlght for the best car in the world. Perfect decision for true patriot!</p>
+				<button class="card__compare-button card__button">Compare</button>
+				<button class="card__buy-button card__button">Buy</button>
+			</div>
+			<div class="card">
+				<img src="images\zhiguli-blinker.jpg" alt="zhiguli-wheel.jpg" style="width:100%">
+				<h1>Blinker for Zhiguli</h1>
+				<p class="price">2,500 ₽</p>
+				<p></p>
+				<button class="card__compare-button card__button">Compare</button>
+				<button class="card__buy-button card__button">Buy</button>
+			</div>
+			<div class="card">
+				<img src="images\zhiguli-wheel.jpg" alt="zhiguli-wheel.jpg" style="width:100%">
+				<h1>Foot break for Zhiguli</h1>
+				<p class="price">2,500 ₽</p>
+				<p>The best headlght for the best car in the world. Perfect decision for true patriot!</p>
+				<button class="card__compare-button card__button">Compare</button>
+				<button class="card__buy-button card__button">Buy</button>
+			</div>
 		</section>
-		<section>
-			<header>
-				<h2 class="section-header">Prices for Zaporozhets</h2>
+		<section class="section">
+			<header class="section-header">
+				<h2 class="section-header__h2">Prices for Zhiguli</h2>
 			</header>
-			<main>
-				<!--border and align are to be specified via CSS-->
-				<table>
-					<tr>
-						<th>Name</th>
-						<th>Unit</th>
-						<th>Price, RUB</th>
-						<th>Awaiting, days</th>
-					</tr>
-					<tr>
-						<td>Wheel</td>
-						<td>1 p.</td>
-						<td>5000</td>
-						<td>4</td>
-					</tr>
-					<tr>
-						<td>Circle</td>
-						<td>1 p.</td>
-						<td>10000</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Headlight</td>
-						<td>1 p.</td>
-						<td>2500</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Blinker</td>
-						<td>1 p.</td>
-						<td>1000</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Foot break</td>
-						<td>1 p.</td>
-						<td>10000</td>
-						<td>5</td>
-					</tr>
-					<tr>
-						<td>Hand break</td>
-						<td>1 p.</td>
-						<td>10000</td>
-						<td>7</td>
-					</tr>
-					<tr>
-						<td>Wheel</td>
-						<td>1 p.</td>
-						<td>5000</td>
-						<td>4</td>
-					</tr>
-					<tr>
-						<td>Wheel</td>
-						<td>1 p.</td>
-						<td>5000</td>
-						<td>4</td>
-					</tr>
-					<tr>
-						<td>Wheel</td>
-						<td>1 p.</td>
-						<td>5000</td>
-						<td>4</td>
-					</tr>
-					
-			  </table>
-			</main>
+			<table class="table">
+				<tr>
+					<th>Name</th>
+					<th>Unit</th>
+					<th>Price, RUB</th>
+					<th>Awaiting, days</th>
+				</tr>
+				<tr>
+					<td>Wheel</td>
+					<td>1 p.</td>
+					<td>5000</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Circle</td>
+					<td>1 p.</td>
+					<td>10000</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Headlight</td>
+					<td>1 p.</td>
+					<td>2500</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Blinker</td>
+					<td>1 p.</td>
+					<td>1000</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Foot break</td>
+					<td>1 p.</td>
+					<td>10000</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>Hand break</td>
+					<td>1 p.</td>
+					<td>10000</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>Wheel</td>
+					<td>1 p.</td>
+					<td>5000</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Wheel</td>
+					<td>1 p.</td>
+					<td>5000</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Wheel</td>
+					<td>1 p.</td>
+					<td>5000</td>
+					<td>4</td>
+				</tr>
+			</table>
 		</section>
-		<section>
-			<header>
-				<h2 class="section-header">Prices for KamAZ</h2>
+		<section class="section">
+			<header class="section-header">
+				<h2 class="section-header__h2">Prices for Zaporozhets</h2>
 			</header>
-			<main>
-				<!--border and align are to be specified via CSS-->
-				<table>
-					<tr>
-						<th>Name</th>
-						<th>Unit</th>
-						<th>Price, RUB</th>
-						<th>Awaiting, days</th>
-					</tr>
-					<tr>
-						<td>Wheel</td>
-						<td>1 p.</td>
-						<td>5000</td>
-						<td>4</td>
-					</tr>
-					<tr>
-						<td>Circle</td>
-						<td>1 p.</td>
-						<td>10000</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Headlight</td>
-						<td>1 p.</td>
-						<td>2500</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Blinker</td>
-						<td>1 p.</td>
-						<td>1000</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Foot break</td>
-						<td>1 p.</td>
-						<td>10000</td>
-						<td>5</td>
-					</tr>
-					<tr>
-						<td>Hand break</td>
-						<td>1 p.</td>
-						<td>10000</td>
-						<td>7</td>
-					</tr>
-					<tr>
-						<td>Wheel</td>
-						<td>1 p.</td>
-						<td>5000</td>
-						<td>4</td>
-					</tr>
-					<tr>
-						<td>Wheel</td>
-						<td>1 p.</td>
-						<td>5000</td>
-						<td>4</td>
-					</tr>
-					<tr>
-						<td>Wheel</td>
-						<td>1 p.</td>
-						<td>5000</td>
-						<td>4</td>
-					</tr>
-					
-			  </table>
-			</main>
+			<table class="table">
+				<tr>
+					<th>Name</th>
+					<th>Unit</th>
+					<th>Price, RUB</th>
+					<th>Awaiting, days</th>
+				</tr>
+				<tr>
+					<td>Wheel</td>
+					<td>1 p.</td>
+					<td>5000</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Circle</td>
+					<td>1 p.</td>
+					<td>10000</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Headlight</td>
+					<td>1 p.</td>
+					<td>2500</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Blinker</td>
+					<td>1 p.</td>
+					<td>1000</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Foot break</td>
+					<td>1 p.</td>
+					<td>10000</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>Hand break</td>
+					<td>1 p.</td>
+					<td>10000</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>Wheel</td>
+					<td>1 p.</td>
+					<td>5000</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Wheel</td>
+					<td>1 p.</td>
+					<td>5000</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Wheel</td>
+					<td>1 p.</td>
+					<td>5000</td>
+					<td>4</td>
+				</tr>
+				
+		  </table>
+		</section>
+		<section class="section">
+			<header class="section-header">
+				<h2 class="section-header__h2">Prices for KamAZ</h2>
+			</header>
+			<table class="table">
+				<tr>
+					<th>Name</th>
+					<th>Unit</th>
+					<th>Price, RUB</th>
+					<th>Awaiting, days</th>
+				</tr>
+				<tr>
+					<td>Wheel</td>
+					<td>1 p.</td>
+					<td>5000</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Circle</td>
+					<td>1 p.</td>
+					<td>10000</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Headlight</td>
+					<td>1 p.</td>
+					<td>2500</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Blinker</td>
+					<td>1 p.</td>
+					<td>1000</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Foot break</td>
+					<td>1 p.</td>
+					<td>10000</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>Hand break</td>
+					<td>1 p.</td>
+					<td>10000</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>Wheel</td>
+					<td>1 p.</td>
+					<td>5000</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Wheel</td>
+					<td>1 p.</td>
+					<td>5000</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Wheel</td>
+					<td>1 p.</td>
+					<td>5000</td>
+					<td>4</td>
+				</tr>
+				
+			</table>
 		</section>
 		<br>
 		<br>
 		<footer class="footer">
 			<br>
-			<div>
-				<a href="./main.html">Main</a>
-				Prices
-				<a href="./contacts.html">Contacts</a>
+			<div class="navigation">
+				<a href="./main.html" class="navigation__item link">Main</a>
+				<a href="./prices.html" class="navigation__item link link-current">Prices</a>
+				<a href="./contacts.html" class="navigation__item link">Contacts</a>
 			</div>
-			<div>(C) <a href="https://github.com/alesvyat/html-metamins" target="_blank">Sasha</a>, 2018</div>
+			<div class="copyright">
+				(C) <a class="copyright__link link" href="https://github.com/alesvyat/html-metamins" target="_blank">Sasha</a>, 2018
+			</div>
 		</footer>
+		<script type="text/javascript" src="scripts/prices-script-init.js"></script>
 	</body>
 </html>
