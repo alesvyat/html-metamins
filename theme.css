@@ -122,6 +122,22 @@ img {
 	color: var(--color4);
 }
 
+.section__name-input {
+	border-radius: 12px;
+	width: 200px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin: 10px;
+}
+
+.section__question-button {
+	border-radius: 12px;
+	background-color: var(--color3);
+	color: var(--color5);
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
 .footer {
 	position: fixed;
 	right: 0;
