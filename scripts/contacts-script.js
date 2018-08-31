@@ -1,3 +1,8 @@
+
+//	-----------------------------------------------------------------------------------
+//	From day 5
+//	-----------------------------------------------------------------------------------
+
 function welcome(name, surname) {
 	let welcome = "Hello, " + name + " from the house of " + surname;
 	//console.log(welcome);
@@ -74,5 +79,78 @@ function isMiddleAge(person) {
 }
 
 
+//	-----------------------------------------------------------------------------------
+//	From day 6
+//	-----------------------------------------------------------------------------------
 
+function Day6() {
+	let x1;
+	let x2;
 
+	this.scaleConverter = function(numberSrc, scaleSrc, scaleDst) {
+		const scaleMin = 2;
+		const scaleMax = 10;
+		if(scaleSrc < scaleMin || scaleSrc > scaleMax) {
+			console.log('Initial scale is ' + scaleSrc + ' - inacceptable. Fuck you');
+			return;
+		}
+		if(scaleDst < scaleMin || scaleDst > scaleMax) {
+			console.log('Destination scale is ' + scaleDst + ' - inacceptable. Fuck you');
+			return;
+		}
+
+		let numberDst = '';
+		let numberDec = 0;
+		let isNegative = false;
+		if (numberSrc < 0) {
+			isNegative = true;
+			numberSrc = Math.abs(numberSrc);
+		}
+		numberSrc = numberSrc.toString();
+		for (let i = 0; i < numberSrc.length; i++) {
+			let j = numberSrc.length - i - 1;
+			numberDec += numberSrc[i] * Math.pow(scaleSrc, j);
+		}
+
+		console.log('numberDec = ' + numberDec);
+
+		let numberDecModified = numberDec;
+		while(numberDecModified != 0) {
+			dstMod = numberDecModified % scaleDst;
+			numberDecModified = (numberDecModified - dstMod) / scaleDst;
+
+			numberDst = dstMod.toString() + numberDst;
+		}
+		if (isNegative) {
+			numberDst = '-' + numberDst;
+		}
+
+		console.log('numberDst = ' + numberDst);
+
+		return numberDst;
+	}
+
+	this.squareEquation = function(a, b, c) {
+		let d = b * b - 4 * a * c;
+		if (d < 0) {
+			console.log('Discriminant is ' + d + ' (negative)');
+		}
+		this.x1 = -b + Math.sqrt(d);
+		this.x2 = -b - Math.sqrt(d);
+		return this.x1 + ', ' + this.x2;
+	}
+
+	this.alignStringArray = function(strArray) {
+		let strArrayChanged = strArray.concat();
+		let maxLength = 0;
+		for (let i = 0; i < strArrayChanged.length; i++) {
+			maxLength = max([maxLength, strArrayChanged[i].length]);
+		}
+		for (let i = 0; i < strArrayChanged.length; i++) {
+			while(strArrayChanged[i].length < maxLength) {
+				strArrayChanged[i] += ' ';
+			}
+		}
+		return strArrayChanged;
+	}
+}
