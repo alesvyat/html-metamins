@@ -4,7 +4,7 @@
 		<title>Sasha's</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="theme.css">
-		<script src="/script.js"></script>
+		<script src=""></script>
 	</head>
 	<body class="body">
 		<header class="header">
@@ -52,11 +52,23 @@
 			<header class="section-header">
 				<h2 class="section-header__h2">Questions?</h2>
 			</header>
-			Name
-			<input class="section__name-input" type="text" name="name"></input>
-			Surname
-			<input class="section__name-input" type="text" name="surname"></input>
-			<button class="section__question-button" onclick="welcomeProcessing(name, surname)">Click this shit</button>
+			<div>
+				<label class="section__feedback-input-label" for="name-input">Name</label>
+				<input id="name-input" class="section__name-input" type="text" name="name"/>
+			</div>
+			<div>
+				<label class="section__feedback-input-label" for="email-input">E-mail</label>
+				<input id="email-input" class="section__name-input" type="text" name="E-mail"></input>
+			</div>
+			<div>
+				<label class="section__feedback-input-label" for="phone-input">Phone</label>
+				<input id="phone-input" class="section__name-input" type="text" name="Phone"></input>
+			</div>
+			<div>
+				<label class="section__feedback-text-label" for="message-input">Message</label>
+				<textarea id="text-input" class="section__name-text" type="text" name="Message"></textarea>
+			</div>
+			<button class="section__question-button" id="click-this-shit-button">Send</button>
 		</section>
 		<br>
 		<br>

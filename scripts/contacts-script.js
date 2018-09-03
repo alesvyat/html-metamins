@@ -84,8 +84,8 @@ function isMiddleAge(person) {
 //	-----------------------------------------------------------------------------------
 
 function Day6() {
-	let x1;
-	let x2;
+	let x1 = 0;
+	let x2 = 0;
 
 	this.scaleConverter = function(numberSrc, scaleSrc, scaleDst) {
 		const scaleMin = 2;
@@ -134,10 +134,11 @@ function Day6() {
 		let d = b * b - 4 * a * c;
 		if (d < 0) {
 			console.log('Discriminant is ' + d + ' (negative)');
+			return;
 		}
-		this.x1 = -b + Math.sqrt(d);
-		this.x2 = -b - Math.sqrt(d);
-		return this.x1 + ', ' + this.x2;
+		x1 = -b + Math.sqrt(d);
+		x2 = -b - Math.sqrt(d);
+		return x1 + ', ' + x2;
 	}
 
 	this.alignStringArray = function(strArray) {
@@ -154,3 +155,37 @@ function Day6() {
 		return strArrayChanged;
 	}
 }
+
+
+//	-----------------------------------------------------------------------------------
+//	From day 7
+//	-----------------------------------------------------------------------------------
+
+function validateEMail(eMail) {
+	const pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+	return eMail.search(pattern) > -1;
+}
+
+
+const ctsBtn = document.getElementById('click-this-shit-button');
+ctsBtn.addEventListener('click', (event) => {
+	let name = document.getElementById('name-input');
+	let eMail = document.getElementById('email-input');
+	let phone = document.getElementById('phone-input');
+	let message = document.getElementById('text-input');
+
+	let isEMailValid = validateEMail(eMail.value);
+
+	console.log('Name:   ' + name.value);
+	console.log('E-mail: ' + eMail.value);
+	console.log('Phone:  ' + phone.value);
+	console.log('Message:');
+	console.log(message.value);
+
+	console.log('E-mail validation ' + (isEMailValid ? 'passed' : 'failed'));
+
+	name.value = '';
+	eMail.value = '';
+	phone.value = '';
+	message.value = '';
+});
